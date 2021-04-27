@@ -2,15 +2,19 @@ lockfileVersion: 5.3
 
 specifiers:
   html-webpack-plugin: ^5.3.1
+  markdown-loader: ^6.0.0
   webpack: ^5.35.1
   webpack-cli: ^4.6.0
   webpack-dev-server: ^3.11.2
+  webpack-merge: ^5.7.3
 
 devDependencies:
   html-webpack-plugin: 5.3.1_webpack@5.35.1
+  markdown-loader: 6.0.0
   webpack: 5.35.1_webpack-cli@4.6.0
   webpack-cli: 4.6.0_ab3389d103c5d77a12ed598bbd247b00
   webpack-dev-server: 3.11.2_webpack-cli@4.6.0+webpack@5.35.1
+  webpack-merge: 5.7.3
 
 packages:
 
@@ -369,6 +373,10 @@ packages:
 
   /batch/0.6.1:
     resolution: {integrity: sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=}
+    dev: true
+
+  /big.js/5.2.2:
+    resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
     dev: true
 
   /binary-extensions/1.13.1:
@@ -873,6 +881,11 @@ packages:
 
   /emoji-regex/7.0.3:
     resolution: {integrity: sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==}
+    dev: true
+
+  /emojis-list/3.0.0:
+    resolution: {integrity: sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==}
+    engines: {node: '>= 4'}
     dev: true
 
   /encodeurl/1.0.2:
@@ -1737,6 +1750,13 @@ packages:
     resolution: {integrity: sha512-c7/8mbUsKigAbLkD5B010BK4D9LZm7A1pNItkEwiUZRpIN66exu/e7YQWysGun+TRKaJp8MhemM+VkfWv42aCA==}
     dev: true
 
+  /json5/1.0.1:
+    resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.5
+    dev: true
+
   /killable/1.0.1:
     resolution: {integrity: sha512-LzqtLKlUwirEUyl/nicirVmNiPvYs7l5n8wOPP7fyJVpUPkvCnW/vuiXGpylGUlnPDnB7311rARzAt3Mhswpjg==}
     dev: true
@@ -1768,6 +1788,15 @@ packages:
   /loader-runner/4.2.0:
     resolution: {integrity: sha512-92+huvxMvYlMzMt0iIOukcwYBFpkYJdpl2xsZ7LrlayO7E8SOv+JJUEK17B/dJIHAOLMfh2dZZ/Y18WgmGtYNw==}
     engines: {node: '>=6.11.5'}
+    dev: true
+
+  /loader-utils/1.4.0:
+    resolution: {integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==}
+    engines: {node: '>=4.0.0'}
+    dependencies:
+      big.js: 5.2.2
+      emojis-list: 3.0.0
+      json5: 1.0.1
     dev: true
 
   /locate-path/3.0.0:
@@ -1810,6 +1839,19 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       object-visit: 1.0.1
+    dev: true
+
+  /markdown-loader/6.0.0:
+    resolution: {integrity: sha512-kUTEEpWRc5zcQbdjpK0QYdp/9Z5Oep440foKSXc7wWetcRxrWm4vbbXRW0Gqhht5CKJ4gm7el4HOPPyqs/ziTA==}
+    dependencies:
+      loader-utils: 1.4.0
+      marked: 0.7.0
+    dev: true
+
+  /marked/0.7.0:
+    resolution: {integrity: sha512-c+yYdCZJQrsRjTPhUx7VKkApw9bwDkNbHUKo1ovgcfDjb2kc8rLuRbIFyXL5WOEUwzSSKo3IXpph2K6DqB/KZg==}
+    engines: {node: '>=0.10.0'}
+    hasBin: true
     dev: true
 
   /media-typer/0.3.0:
