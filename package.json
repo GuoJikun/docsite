@@ -1,0 +1,33 @@
+{
+  "name": "docsite",
+  "version": "1.0.0",
+  "description": "静态站点生成器",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "pnpx webpack --config webpack.config.dev.js",
+    "build": "pnpx webpack --config webpack.config.prod.js",
+    "test": "pnpm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuoJikun/docsite.git"
+  },
+  "keywords": [
+    "press",
+    "blogs",
+    "site",
+    "document"
+  ],
+  "author": "GuoJikun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GuoJikun/docsite/issues"
+  },
+  "homepage": "https://github.com/GuoJikun/docsite#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
