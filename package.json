@@ -4,8 +4,8 @@
   "description": "静态站点生成器",
   "main": "src/index.js",
   "scripts": {
-    "dev": "pnpx webpack --config webpack.config.dev.js",
-    "build": "pnpx webpack --config webpack.config.prod.js",
+    "dev": "pnpx webpack --config scripts/webpack.config.dev.js",
+    "build": "pnpx webpack --config scripts/webpack.config.prod.js",
     "test": "pnpm run test"
   },
   "repository": {
@@ -25,8 +25,10 @@
   },
   "homepage": "https://github.com/GuoJikun/docsite#readme",
   "devDependencies": {
+    "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "markdown-loader": "^6.0.0",
+    "marked": "^2.0.3",
     "webpack": "^5.35.1",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2",

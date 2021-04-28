@@ -1,12 +1,23 @@
 const { resolve } = require("path");
-const webpackMerge = require('webpack-merge');
+const { merge } = require("webpack-merge");
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const baseConfig = require('./webpack.config.base.js');
+const baseConfig = require("./webpack.config.base.js");
 
-module.exports = webpackMerge(baseConfig,{
+module.exports = merge(baseConfig, {
+    mode: "production",
     output: {
-        filename: "[name].bundle.js",
-        path: resolve(__dirname, "dist"),
+        filename: "[name].html",
+        path: resolve(__dirname, "../dist"),
         clean: true,
     },
+    entry: {
+        index: resolve(__dirname, "../src/index.md"),
+    },
+    target: false,
+    // plugins: [
+    //     new HtmlWebpackPlugin({
+    //         template: resolve(__dirname, "../src/index.html"),
+    //     }),
+    // ],
 });

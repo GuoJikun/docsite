@@ -1,16 +1,20 @@
 lockfileVersion: 5.3
 
 specifiers:
+  html-loader: ^2.1.2
   html-webpack-plugin: ^5.3.1
   markdown-loader: ^6.0.0
+  marked: ^2.0.3
   webpack: ^5.35.1
   webpack-cli: ^4.6.0
   webpack-dev-server: ^3.11.2
   webpack-merge: ^5.7.3
 
 devDependencies:
+  html-loader: 2.1.2_webpack@5.35.1
   html-webpack-plugin: 5.3.1_webpack@5.35.1
   markdown-loader: 6.0.0
+  marked: 2.0.3
   webpack: 5.35.1_webpack-cli@4.6.0
   webpack-cli: 4.6.0_ab3389d103c5d77a12ed598bbd247b00
   webpack-dev-server: 3.11.2_webpack-cli@4.6.0+webpack@5.35.1
@@ -1358,6 +1362,17 @@ packages:
     resolution: {integrity: sha512-8nxjcBcd8wovbeKx7h3wTji4e6+rhaVuPNpMqwWgnHh+N9ToqsCs6XztWRBPQ+UtzsoMAdKZtUENoVzU/EMtZA==}
     dev: true
 
+  /html-loader/2.1.2_webpack@5.35.1:
+    resolution: {integrity: sha512-XB4O1+6mpLp4qy/3qg5+1QPZ/uXvWtO64hNAX87sKHwcHkp1LJGU7V3sJ9iVmRACElAZXQ4YOO/Lbkx5kYfl9A==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      webpack: ^5.0.0
+    dependencies:
+      html-minifier-terser: 5.1.1
+      parse5: 6.0.1
+      webpack: 5.35.1_webpack-cli@4.6.0
+    dev: true
+
   /html-minifier-terser/5.1.1:
     resolution: {integrity: sha512-ZPr5MNObqnV/T9akshPKbVgyOqLmy+Bxo7juKCfTfnjNniTAMdy4hz21YQqoofMBJD2kdREaqPPdThoR78Tgxg==}
     engines: {node: '>=6'}
@@ -1854,6 +1869,12 @@ packages:
     hasBin: true
     dev: true
 
+  /marked/2.0.3:
+    resolution: {integrity: sha512-5otztIIcJfPc2qGTN8cVtOJEjNJZ0jwa46INMagrYfk0EvqtRuEHLsEe0LrFS0/q+ZRKT0+kXK7P2T1AN5lWRA==}
+    engines: {node: '>= 8.16.2'}
+    hasBin: true
+    dev: true
+
   /media-typer/0.3.0:
     resolution: {integrity: sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=}
     engines: {node: '>= 0.6'}
@@ -2205,6 +2226,10 @@ packages:
     dependencies:
       dot-case: 3.0.4
       tslib: 2.2.0
+    dev: true
+
+  /parse5/6.0.1:
+    resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==}
     dev: true
 
   /parseurl/1.3.3:
