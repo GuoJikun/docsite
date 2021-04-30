@@ -1,0 +1,25 @@
+<mxfile>
+    <diagram id="0Z0p2kVh86fb_a-t8i-W" name="第 1 页">
+        <mxGraphModel dx="1040" dy="521" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="39" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="720" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="LOGO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="50" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="NAV" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="50" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="ASIDE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="120" width="120" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="MAIN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="120" width="580" height="370" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
